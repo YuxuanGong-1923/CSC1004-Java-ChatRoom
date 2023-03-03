@@ -35,7 +35,7 @@ public class UserClientService {
                 b = true;
             }
             else{
-                
+                socket.close();
             }
 
         } catch (Exception e) {

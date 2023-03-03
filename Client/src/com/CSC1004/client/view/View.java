@@ -1,11 +1,13 @@
 package com.CSC1004.client.view;
 
+import com.CSC1004.client.service.UserClientService;
 import com.CSC1004.client.utils.Utility;
 
 public class View {
 
     private boolean loop = true;//Control whether show 1st menu
     private String key = "";//Receive the keyboard input
+    private UserClientService userClientService = new UserClientService();//Login Server & Registration
     private void mainMenu(){
 
         while(loop){
@@ -21,7 +23,7 @@ public class View {
                     String pwd = Utility.readString(50);
                     //Check whether the Client exist in the Server
                     //Create Class UserClientService
-                    if(true){
+                    if(userClientService.checkUser(userId,pwd)){
                         System.out.println("2nd Menu");
                     }
                     else{
