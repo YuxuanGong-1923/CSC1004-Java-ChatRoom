@@ -20,6 +20,7 @@ public class View {
                     String userId = Utility.readString(50);
                     String pwd = Utility.readString(50);
                     //Check whether the Client exist in the Server
+                    //Create Class UserClientService
                     if(true){
                         System.out.println("2nd Menu");
                     }
@@ -31,9 +32,6 @@ public class View {
                     loop = false;
                     break;
             }
-
-
-
         }
     }
 }
