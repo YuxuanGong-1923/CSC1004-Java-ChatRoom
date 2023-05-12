@@ -2,15 +2,21 @@ import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
 
+        // A clientHandler which can handle multi-clients
 public class ClientHandler implements Runnable {
     public static ArrayList<ClientHandler> clientHandlers = new ArrayList<>();
     private Socket socket;
     private BufferedReader bufferedReader;
+
     //Read messages and data sent from client
+
     private BufferedWriter bufferedWriter;
     private String clientUsername;
 
     public ClientHandler(Socket socket, String username) {
+
+        //Connect a new user
+
         try {
             this.socket = socket;
             clientUsername = username;
@@ -24,6 +30,8 @@ public class ClientHandler implements Runnable {
         }
     }
 
+    //Get the message from the chatPage
+
     @Override
     public void run() {
         String messageFromClient;
@@ -31,7 +39,6 @@ public class ClientHandler implements Runnable {
             try {
                 messageFromClient = bufferedReader.readLine();
                 broadcastMessage(messageFromClient);
-                System.err.println("Broadcast Message from client");
             } catch (IOException e) {
                 e.printStackTrace();
                 closeEverything(socket, bufferedReader, bufferedWriter);
@@ -40,6 +47,7 @@ public class ClientHandler implements Runnable {
         }
     }
 
+    //Broadcast the message to multi-clients
     public void broadcastMessage(String messageToSend) {
 
         for (ClientHandler clientHandler : clientHandlers) {
@@ -55,6 +63,8 @@ public class ClientHandler implements Runnable {
             }
         }
     }
+
+   // Remove the client if it left the chat
 
     public void removeClientHandler() {
         clientHandlers.remove(this);

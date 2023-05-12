@@ -8,6 +8,9 @@ import java.io.*;
 import java.net.Socket;
 
 public class ChatPage extends JFrame{
+
+    //GUI
+
     public JPanel chatPanel = new JPanel();
     private JLabel chatRoomLabel;
     public JPanel chatPage;
@@ -23,6 +26,7 @@ public class ChatPage extends JFrame{
     public ChatPage(JFrame parent, Socket socket, String username) {
 
         //GUI
+
         setTitle("Menu");
         setContentPane(chatPage);
         setMinimumSize(new Dimension(550,600));
@@ -45,18 +49,20 @@ public class ChatPage extends JFrame{
             closeEverything(socket, bufferedReader, bufferedWriter);
         }
 
+        //implement the function of sending a message
 
         sendButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-
                         String messageToSend = messageText.getText();
                         bufferedWriter.write(username + ": " + messageToSend);
                         bufferedWriter.newLine();
                         bufferedWriter.flush();
+
+                        //set the Text empty again
+
                         messageText.setText("");
-                        System.err.println("Sent one message");
 
                 } catch (IOException ex) {
                     ex.printStackTrace();
@@ -66,6 +72,8 @@ public class ChatPage extends JFrame{
         });
     }
 
+    //Create a new thread
+    //Get the message broadcast from the server to the chat page
 
     public void listenForMessage() {
         new Thread(() -> {
@@ -74,8 +82,6 @@ public class ChatPage extends JFrame{
         try {
             username = bufferedReader.readLine();
             msgFromGroupChat = bufferedReader.readLine();
-
-            System.err.println("Received one message.");
 
             chatPanel.add(new JLabel(" User: " + username));
             chatPanel.add(new JLabel(msgFromGroupChat));

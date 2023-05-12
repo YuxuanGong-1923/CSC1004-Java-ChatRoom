@@ -41,6 +41,7 @@ public class Server extends JFrame{
 
         public void startServer(){
             try{
+
                 while(!serverSocket.isClosed()){
 
         // Get input from the client about the login
@@ -67,7 +68,6 @@ public class Server extends JFrame{
                         thread.start();
                     }
                     else{
-                        System.err.println("Invalid user");
                         bufferedWriter.write("INVALID");
                         bufferedWriter.newLine();
                         bufferedWriter.flush();

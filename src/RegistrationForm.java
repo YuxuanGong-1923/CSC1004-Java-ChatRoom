@@ -18,13 +18,16 @@ public class RegistrationForm extends JFrame{
     private JPanel registerPanel;
 
     public RegistrationForm(JFrame parent) {
-            //super(parent);
+
+        // GUI
+
             setTitle("Creat a new account");
             setContentPane(registerPanel);
             setMinimumSize(new Dimension(550,600));
-            //setModal(true);
             setLocationRelativeTo(parent);
             setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+            // Choose register or exit
 
         btnRegister.addActionListener(new ActionListener() {
             @Override
@@ -43,12 +46,18 @@ public class RegistrationForm extends JFrame{
     }
 
     private void registerUser() {
+
+        //get the name
+
         String name = tfName.getText();
         String email = tfEmail.getText();
         String phone = tfPhone.getText();
         String address = tfAddress.getText();
         String password = String.valueOf(pfPassword.getPassword());
         String confirmPassword = String.valueOf(pfConfirmPassword.getPassword());
+
+        //throw exceptional condition if the user doesn't insert information
+        // but clicks register
 
     if(name.isEmpty()||email.isEmpty()||phone.isEmpty()||address.isEmpty()||password.isEmpty()){
         JOptionPane.showMessageDialog(this,
@@ -57,6 +66,8 @@ public class RegistrationForm extends JFrame{
                 JOptionPane.ERROR_MESSAGE);
         return;
     }
+
+    //  throw condition if the user insert a wrong confirm password
 
     if(!password.equals(confirmPassword)){
         JOptionPane.showMessageDialog(this,
@@ -78,6 +89,7 @@ public class RegistrationForm extends JFrame{
     }
     public User user;
 
+    // create a user in database
      private User addUserToDatabase(String name, String email, String phone, String address, String password) {
         User user = null;
         final String DB_URL = "jdbc:mysql://localhost/MyStore?serverTimezone=UTC";
@@ -86,6 +98,7 @@ public class RegistrationForm extends JFrame{
 
         try{
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+
             // Connected to database successfully...
 
             Statement stmt = conn.createStatement();
