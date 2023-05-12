@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Registration and Login:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab42a525-fae1-4f58-ae05-70ba7420fdf5" name="Changes" comment="" />
+    <list default="true" id="aafe5f73-ed01-43a5-8286-7c17f1e6b633" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2MVXdszMZ4n5aUaVJzYl25Qe6zw" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OUsSv4uhXsRn8HVopGI81XbAzJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,20 +37,126 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/24232/Desktop/CSC1004-Java-ChatRoom",
+    "last_opened_file_path": "C:/Users/24232/Desktop/CSC1004-Java-ChatRoom/Registration and Login/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\24232\Desktop\CSC1004-Java-ChatRoom\Registration and Login\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\24232\Desktop\Registration and Login\src" />
+      <recent name="C:\Users\24232\Desktop\Registration and Login" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.Menu">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="Registration and Login" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Menu" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Menu" />
+      <module name="Registration and Login" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="Registration and Login" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="Registration and Login" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clientChoice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="clientChoice" />
+      <module name="Registration and Login" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="应用程序.Client" />
+      <item itemvalue="应用程序.Menu" />
+      <item itemvalue="应用程序.Server" />
+      <item itemvalue="应用程序.clientChoice" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Menu" />
+        <item itemvalue="应用程序.Client" />
+        <item itemvalue="应用程序.Server" />
+        <item itemvalue="应用程序.clientChoice" />
+        <item itemvalue="应用程序.Server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ab42a525-fae1-4f58-ae05-70ba7420fdf5" name="Changes" comment="" />
-      <created>1677853813445</created>
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="aafe5f73-ed01-43a5-8286-7c17f1e6b633" name="变更" comment="" />
+      <created>1681626499310</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677853813445</updated>
-      <workItem from="1677853814540" duration="5000" />
+      <updated>1681626499310</updated>
+      <workItem from="1681626500452" duration="813000" />
+      <workItem from="1681635404694" duration="151000" />
+      <workItem from="1681635566911" duration="2075000" />
+      <workItem from="1681637671584" duration="1241000" />
+      <workItem from="1681734556472" duration="7331000" />
+      <workItem from="1681742031878" duration="33000" />
+      <workItem from="1681824004305" duration="622000" />
+      <workItem from="1682516296109" duration="35000" />
+      <workItem from="1682736104006" duration="440000" />
+      <workItem from="1682737006843" duration="1314000" />
+      <workItem from="1682869365988" duration="4090000" />
+      <workItem from="1683114091779" duration="692000" />
+      <workItem from="1683115581609" duration="23000" />
+      <workItem from="1683298698614" duration="10000" />
+      <workItem from="1683298803547" duration="6489000" />
+      <workItem from="1683306341250" duration="987000" />
+      <workItem from="1683307378093" duration="1442000" />
+      <workItem from="1683370443350" duration="2526000" />
+      <workItem from="1683373418852" duration="9294000" />
+      <workItem from="1683385693865" duration="202000" />
+      <workItem from="1683386372842" duration="132000" />
+      <workItem from="1683544095672" duration="103000" />
+      <workItem from="1683544764497" duration="834000" />
+      <workItem from="1683546636483" duration="1052000" />
+      <workItem from="1683548078946" duration="255000" />
+      <workItem from="1683556806545" duration="11519000" />
+      <workItem from="1683629715957" duration="1241000" />
+      <workItem from="1683631004983" duration="470000" />
+      <workItem from="1683631502683" duration="7224000" />
+      <workItem from="1683638956435" duration="457000" />
+      <workItem from="1683639460738" duration="112000" />
+      <workItem from="1683639603627" duration="288000" />
+      <workItem from="1683639914935" duration="156000" />
+      <workItem from="1683640152530" duration="411000" />
+      <workItem from="1683800468201" duration="3000" />
+      <workItem from="1683893722179" duration="1201000" />
     </task>
     <servers />
   </component>
