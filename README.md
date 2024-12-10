@@ -1,26 +1,25 @@
 # CSC1004-Java-ChatRoom
   
-This code implements the basic program of Java Chatroom
+This code is a coursework for CSC1004, which implements the basic program of Java Chatroom
 which can implement the function of GUI, multi-client chat, 
 login and register.
 
 Instructions on how to run this code:
 
   First, download a xampp control panel which can control the database
-  easily. I don't know whether this program can work on TA's desktop with 
-  mysql desktop. If not, I'm sorry to trouble TA to download a new app.
+  easily.
   Here are two videos on YouTube teaching how to download them
 
-  Second, you start the code and then click the server button to start the
+  Second, start the code and then click the server button to start the
   server. Don't close the server after it start running until the chat ends.
 
-  Third, you open the program again, enter the Client mode
+  Third, open the program again, enter the Client mode
   click the register button to register. 
 
-  Fourth, you start the program and enter the client mode again to login in.
+  Fourth, start the program and enter the client mode again to login in.
   After successfully login, you can see a chat page.
 
-  Fifth, you start the program again and enter numerous clients to have
+  Fifth, start the program again and enter numerous clients to have
   multi-client chat.
 
 Techniques I have used and how I developed this project
